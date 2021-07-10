@@ -29,6 +29,12 @@
 - Node v10+ (Node v14 Recommended)
 - Network connection
 
+## Command
+
+/start - start bot
+/ping - ping bot
+/covid kota - show database covid
+/gempa - check gempa
 
 ### Heroku
 
@@ -39,5 +45,7 @@ Tekan tombol dibawah ini dan buat app heroku baru, **lalu isi variable variable 
 <a href="https://heroku.com/deploy?template=https://github.com/azkadev/userbot-telegram">![Heroku Logo](https://img.shields.io/badge/Deploy%20To%20Heroku-blueviolet?style=for-the-badge&logo=heroku)</a>
 
 ---
+
+Demo
 
 https://raw.githubusercontent.com/azkadev/database/main/Record_2021-07-10-23-48-13.mp4

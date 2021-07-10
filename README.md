@@ -65,10 +65,11 @@ Tekan tombol dibawah ini dan buat app heroku baru, **lalu isi variable variable 
 
 Pastikan laptop kalian udah install nodejs    
 1. Open terminal and paste code    
-    ``git clone https://github.com/azkadev/userbot-telegram.git && cd userbot-telegram && npm i```
+    ```git clone https://github.com/azkadev/userbot-telegram.git && cd userbot-telegram && npm i```
 2. Typing
-    ```node main.js app_id=your_app_id app_hash=your_app_hash session=paste_your_session
+    ```node main.js app_id=your_app_id app_hash=your_app_hash session=paste_your_session```
 3. and test it :)
+    
 ---
 
 Demo

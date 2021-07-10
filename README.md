@@ -20,6 +20,8 @@
 
 ---
 
+## TUTOAL
+<a href="https://heroku.com/deploy?template=https://github.com/azkadev/userbot-telegram">![Heroku Logo](https://img.shields.io/badge/Deploy%20To%20Heroku-blueviolet?style=for-the-badge&logo=heroku)</a>
 ## ❄Content-Source-Code
 - 📰 0% Ads
 - 💸 0% Tracker
@@ -32,8 +34,11 @@
 ## Command
 
 /start - start bot
+
 /ping - ping bot
+
 /covid kota - show database covid
+
 /gempa - check gempa
 
 ### Heroku

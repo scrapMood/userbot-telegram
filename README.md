@@ -39,3 +39,5 @@ Tekan tombol dibawah ini dan buat app heroku baru, **lalu isi variable variable 
 <a href="https://heroku.com/deploy?template=https://github.com/azkadev/userbot-telegram">![Heroku Logo](https://img.shields.io/badge/Deploy%20To%20Heroku-blueviolet?style=for-the-badge&logo=heroku)</a>
 
 ---
+
+![](https://github.com/azkadev/database/blob/main/Record_2021-07-10-23-48-13.mp4?raw=true)

@@ -122,7 +122,7 @@ function systeminfo() {
     }
     var caption = "\n╭" + "─".repeat(10) + `「 ℹ️ Info Bot ℹ️ 」`.padStart(15)
     caption += "\n│"
-    caption += "\n├ •" + "OS".padStart(3) + ":".padStart(24) + `${os.type()}}`.padStart(10)
+    caption += "\n├ •" + "OS".padStart(3) + ":".padStart(24) + `${os.type()}`.padStart(5)
     caption += "\n├ •" + `CPU`.padStart(4) + `:`.padStart(21) + json.cpu.padStart(10)
     caption += "\n├ •" + `RAM`.padStart(4) + `:`.padStart(20) + `${ram} / ${free} Free`.padStart(9)
     caption += "\n├ •" + `Uptime-OS`.padStart(10) + `:`.padStart(8) + formatsc(os.uptime()).padStart(23)

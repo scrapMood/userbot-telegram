@@ -1,0 +1,16 @@
+{
+  "name": "userbot-project-youtube",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bmkg-scrape": "^1.0.5",
+    "covid19-scrape": "^1.0.2",
+    "duagram": "^1.0.0"
+  }
+}

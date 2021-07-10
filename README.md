@@ -46,6 +46,8 @@
 /start - start bot
 
 /ping - ping bot
+    
+/info - info system    
 
 /covid kota - show database covid
 

@@ -40,4 +40,4 @@ Tekan tombol dibawah ini dan buat app heroku baru, **lalu isi variable variable 
 
 ---
 
-![](https://github.com/azkadev/database/blob/main/Record_2021-07-10-23-48-13.mp4?raw=true)
+https://github.com/azkadev/database/blob/main/Record_2021-07-10-23-48-13.mp4

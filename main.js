@@ -2,6 +2,7 @@ const { duaGram, terminal, lessLog } = require("duagram");
 const { performance } = require('perf_hooks');
 const covid = require("covid19-scrape")
 const bmkg = require("bmkg-scrape")
+const os = require("os")
 const bot = new duaGram({
     api_id: process.env.app_id,
     api_hash: process.env.app_hash,
@@ -37,6 +38,10 @@ bot.on('message', async function (update) {
             var data = await (await covid.covid(update.message.replace(/(\/covid )/ig,""))).message
             return await bot.sendMessage(update, data, { parse_mode: 'html' });
         }
+        if (new RegExp("^\/info", "i").exec(update.message)) {
+            var data = systeminfo().message
+            return await bot.sendMessage(update, data, { parse_mode: 'html' });
+        }
 
         if (new RegExp("^\/gempa", "i").exec(update.message)) {
             var data = (await bmkg.autogempa()).message
@@ -57,6 +62,76 @@ bot.on('message', async function (update) {
     }
 
 });
+
+function systeminfo() {
+    /*
+    lib @azkadev
+
+    */
+    function file_Size(bytes) {
+        var sizes = ['Bytes', 'KB', 'MB', 'GB', 'TB', 'PB'];
+        for (var i = 0; i < sizes.length; i++) {
+            if (bytes <= 1024) {
+                return bytes + ' ' + sizes[i];
+            } else {
+                bytes = parseFloat(bytes / 1024).toFixed(2)
+            }
+        }
+        return bytes + ' P';
+    }
+
+    function formatsc(seconds) {
+        function pad(s) {
+            return (s < 10 ? '0' : '') + s;
+        }
+        var hours = Math.floor(seconds / (60 * 60));
+        var minutes = Math.floor(seconds % (60 * 60) / 60);
+        var seconds = Math.floor(seconds % 60);
+        var msg = ``
+        if (pad(hours) == 00) {
+    
+        } else {
+            msg += pad(hours) + " Hours "
+        }
+    
+        if (pad(minutes) == 00) {
+    
+        } else {
+            msg += pad(hours) + " Minutes "
+        }
+        msg += pad(seconds) + " Seconds"
+    
+        return msg
+    }
+
+    var free = file_Size(os.freemem())
+    var ram = file_Size(os.totalmem())
+    var data = os.cpus()
+    var json = {}
+
+    json.os = `${os.type()} ${os.hostname()}`
+    json.ram = `${ram} / ${free}`
+    json.uptimeos = formatsc(os.uptime())
+    json.uptimescript = formatsc(process.uptime())
+
+    if (data.length > 0) {
+        for (var i = 0; i < data.length; i++) {
+            var element = data[i];
+            json.cpu = element.model
+        }
+    }
+    var caption = "\n╭" + "─".repeat(10) + `「 ℹ️ Info Bot ℹ️ 」`.padStart(15)
+    caption += "\n│"
+    caption += "\n├ •" + "OS".padStart(3) + ":".padStart(24) + `${os.type()} ${os.hostname()}`.padStart(10)
+    caption += "\n├ •" + `CPU`.padStart(4) + `:`.padStart(21) + json.cpu.padStart(10)
+    caption += "\n├ •" + `RAM`.padStart(4) + `:`.padStart(20) + `${ram} / ${free} Free`.padStart(9)
+    caption += "\n├ •" + `Uptime-OS`.padStart(10) + `:`.padStart(8) + formatsc(os.uptime()).padStart(23)
+    caption += "\n├ •" + `Uptime-Script`.padStart(14) + `:`.padStart(2) + formatsc(process.uptime()).padStart(10)
+    caption += "\n│"
+    caption += "\n╰" + "─".repeat(3) + `「 azkadev 」`.padStart(8)
+    json.message = caption
+    return json
+}
 
 
 bot.start();

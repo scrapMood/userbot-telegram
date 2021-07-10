@@ -35,13 +35,13 @@
 ## 3rd Library
 
 <p align="left"> 
-<a href="https://github.com/azkadev/bmkg-scrape"><img title="DOCS" src="https://img.shields.io/badge/Bmkg_Scrape-V1.0.5-blue.svg?style=for-the-badge"</a>
-<a href="https://github.com/azkadev/covid19-scrape"><img title="DOCS" src="https://img.shields.io/badge/COVID_SCAPE-1.0.2-red.svg?style=for-the-badge"</a>
+<a href="https://github.com/azkadev/bmkg-scrape"><img title="DOCS" src="https://img.shields.io/badge/BMKG_SCRAPE-V1.0.5-blue.svg?style=for-the-badge"</a>
+<a href="https://github.com/azkadev/covid19-scrape"><img title="DOCS" src="https://img.shields.io/badge/COVID_SCRAPE-1.0.2-red.svg?style=for-the-badge"</a>
 </p>    
 
 <p align="left"> 
-<a href="https://github.com/ubotindonesia/duagram"><img title="DOCS" src="https://img.shields.io/badge/Duagram-V1.0.0-blue.svg?style=for-the-badge"</a>
-<a href="https://github.com/request/request"><img title="DOCS" src="https://img.shields.io/badge/equest-2.88.2-red.svg?style=for-the-badge"</a>
+<a href="https://github.com/ubotindonesia/duagram"><img title="DOCS" src="https://img.shields.io/badge/DUAGRAM-V1.0.0-blue.svg?style=for-the-badge"</a>
+<a href="https://github.com/request/request"><img title="DOCS" src="https://img.shields.io/badge/REQUEST-V2.88.2-red.svg?style=for-the-badge"</a>
 </p>    
 
 ## Command

@@ -22,6 +22,7 @@
 
 ## TUTOAL
 <a href="https://heroku.com/deploy?template=https://github.com/azkadev/userbot-telegram">![Heroku Logo](https://img.shields.io/badge/Deploy%20To%20Heroku-blueviolet?style=for-the-badge&logo=heroku)</a>
+
 ## ❄Content-Source-Code
 - 📰 0% Ads
 - 💸 0% Tracker
@@ -30,6 +31,13 @@
 ## 🖥Requirements
 - Node v10+ (Node v14 Recommended)
 - Network connection
+
+## 3rd Library
+
+<p align="left"> 
+<a href="https://github.com/azkadev/"><img title="DOCS" src="https://img.shields.io/badge/Bmkg_Scrape-V1.0.5-blue.svg?style=for-the-badge"</a>
+<a href="https://github.com/azkadev/"><img title="DOCS" src="https://img.shields.io/badge/COVID_SCAPE-1.0.2-red.svg?style=for-the-badge"</a>
+</p>    
 
 ## Command
 

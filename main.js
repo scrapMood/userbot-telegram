@@ -4,14 +4,15 @@ const covid = require("covid19-scrape")
 const bmkg = require("bmkg-scrape")
 const os = require("os")
 const bot = new duaGram({
-    api_id: process.env.app_id,
-    api_hash: process.env.app_hash,
+    api_id: Number(process.env.app_id),
+    api_hash: String(process.env.app_hash),
 
     logLevel: 1, // 0 false, 1 event, 2 detail
     logDetail: "none", // none, error, warn, info, debug
 
     // Fill in the session here if you have one, or leave it blank
-    session: process.env.session,
+    session: String(process.env.session),
+    
     // The most common error is the FloodWait error which is caused by calling a method multiple times in a short period and acts as a spam filter from telegram. So:
     floodSleepThreshold: 60,
 

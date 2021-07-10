@@ -31,6 +31,7 @@
 ## Features
 - Support Multiple account login ( tested )
 - Support two login userbot and bot
+- One more features? request aja di github ni atau
 
 ## 🖥Requirements
 - Node v10+ (Node v14 Recommended)

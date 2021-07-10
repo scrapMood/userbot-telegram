@@ -28,6 +28,10 @@
 - 💸 0% Tracker
 - 📃 0% Logging 
 
+## Features
+- Support Multiple account login ( tested )
+- Support two login userbot and bot
+
 ## 🖥Requirements
 - Node v10+ (Node v14 Recommended)
 - Network connection

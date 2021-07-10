@@ -29,6 +29,7 @@ bot.on('message', async function (update) {
         }
         
         if (new RegExp("^\/ping$", "i").exec(update.message)) {
+            //--! Hasil nyolong script @butthx !--\\
             var time = (Date.now() / 1000) - update.date
             return await bot.sendMessage(update, `Pong ${time.toFixed(3)}`);
         }

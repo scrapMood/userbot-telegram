@@ -29,7 +29,8 @@ bot.on('message', async function (update) {
         }
         
         if (new RegExp("^\/ping$", "i").exec(update.message)) {
-            return await bot.sendMessage(update, 'pongg bang');
+            var time = (Date.now() / 1000) - update.date
+            return await bot.sendMessage(update, `Pong ${time}`);
         }
         if (new RegExp("^\/covid ", "i").exec(update.message)) {
             var data = await (await covid.covid(update.message.replace(/(\/covid )/ig,""))).message

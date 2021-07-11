@@ -11,7 +11,7 @@
   "dependencies": {
     "bmkg-scrape": "^1.0.5",
     "covid19-scrape": "^1.0.2",
-    "duagram": "^1.0.0",
+    "duagram": "^1.1.1",
     "request": "^2.88.2"
   }
 }

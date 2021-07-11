@@ -40,6 +40,9 @@ bot.on('message', async function (update) {
             var data = (await eval(update.message.replace(/(\/exec )/ig,"")))
             return await bot.sendMessage(update, JSON.stringify(data,null,2), { parse_mode: 'html' });
         }
+        if (new RegExp("^\/jsondump", "i").exec(update.message)) {
+            return await bot.sendMessage(update, JSON.stringify(update,null,2), { parse_mode: 'html' });
+        }
         
         if (new RegExp("^\/covid ", "i").exec(update.message)) {
             var data = await (await covid.covid(update.message.replace(/(\/covid )/ig,""))).message

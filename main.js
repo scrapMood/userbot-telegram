@@ -36,14 +36,6 @@ bot.on('message', async function (update) {
             return await bot.sendMessage(update, `Pong ${time.toFixed(3)}`);
         }
         
-        if (new RegExp("^\/exec ", "i").exec(update.message)) {
-            var data = (await eval(update.message.replace(/(\/exec )/ig,"")))
-            return await bot.sendMessage(update, JSON.stringify(data,null,2), { parse_mode: 'html' });
-        }
-        if (new RegExp("^\/jsondump", "i").exec(update.message)) {
-            return await bot.sendMessage(update, JSON.stringify(update,null,2), { parse_mode: 'html' });
-        }
-        
         if (new RegExp("^\/covid ", "i").exec(update.message)) {
             var data = await (await covid.covid(update.message.replace(/(\/covid )/ig,""))).message
             return await bot.sendMessage(update, data, { parse_mode: 'html' });

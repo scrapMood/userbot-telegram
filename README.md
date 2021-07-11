@@ -30,7 +30,8 @@
 
 ## Features
 - Support Multiple account login ( tested )
-- Support two login userbot and bot
+- Support two login userbot and bot ( not tested )
+- Support modular ( tested )
 - One more features? request aja di github ni atau
 
 ## 🖥Requirements
